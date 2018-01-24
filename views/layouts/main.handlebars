@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/burgers.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eat-Da-Burger</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="burger-img-holder">
+                <img src="cartoon-burger.png" id="burger-img">
+            </div>
+            <div class="col-xs-12">
+                <h1 id="page-title">Eat-Da-Burger</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4" id="form-holder">
+                <form data-id="{{this.id}}" class="create-form">
+                    <div class="form-group">
+                        <label for="new-burger" id="form-directions">Enter a burger you want to eat and click the Submit button</label>
+                        <textarea id="new-burger" name="newBurger" rows="4" cols="53"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="submit-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row burger-container">
+            {{{ body }}}
+        </div>
+    </div>
+</body>
+</html>

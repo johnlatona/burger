@@ -1,0 +1,84 @@
+html {
+    background-color: #CF5217;
+}
+
+body {
+    background-color: #CF5217;
+}
+
+#page-title {
+    text-align: center;
+    color: #F1E987;
+    font-size: 4vw;
+
+}
+
+#burger-img {
+    margin-top: 5%;
+    width: 30%;
+}
+
+#burger-img-holder {
+    text-align: center
+}
+
+#form-holder {
+    padding: 0 !important;
+    text-align: center;
+    margin-top: 20px
+}
+
+.submit-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F1E987;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border: 1px solid #F1E987;
+}
+
+.submit-button:hover {
+    background-color: #D6CF78;
+    border: 1px solid #D6CF78;
+}
+
+.burger-list-not-devoured {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.burger-list-devoured {
+    background-color: #D6DBD9;
+    color: #898C8B;
+    width: 100%;
+    padding-top: 8px;
+    margin-top: 10px;
+}
+
+.devour-button {
+    background-color: #F1E987;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid #F1E987;
+}
+
+.devour-button:hover {
+    background-color: #D6CF78;
+    border: 1px solid #D6CF78;
+}
+
+.burger-container {
+    margin-bottom: 5%;
+    margin-top: 3%
+}
+
+#form-directions {
+    color: #F1E987;
+    font-size: 1.2vw;
+}
