@@ -4,6 +4,7 @@ var router = express.Router();
 
 var burger = require("../models/burger.js");
 
+//route that handles the request from the root page and sends the data to index.handlebars
 router.get("/", function(req, res){
     burger.all(function(data){
         var handlebarsObject = {
@@ -14,6 +15,7 @@ router.get("/", function(req, res){
     });
 });
 
+//route handles adding a new burger into the database
 router.post("/api/burgers", function(req, res){
     burger.create("burger_name", req.body.burger_name, function(result){
         console.log(req.body.burger_name);
@@ -21,6 +23,7 @@ router.post("/api/burgers", function(req, res){
     });
 });
 
+//route that updates an entry in the table at id ":id"
 router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
@@ -35,7 +38,7 @@ router.put("/api/burgers/:id", function(req, res) {
         }
     });
 });
-
+//route that deletes an existing entry from the database
 router.delete("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
 

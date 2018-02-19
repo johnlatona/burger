@@ -1,5 +1,6 @@
 var orm = require("../config/orm.js");
 
+//burger model that defines CRUD operations as it pertains to the burgers table in the database
 var burger = {
     all: function(cb) {
         orm.all("burgers", function(res) {

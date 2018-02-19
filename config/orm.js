@@ -1,6 +1,7 @@
 var connection = require("../config/connection.js");
 
 var orm = {
+    //retrieves all items from the table
     all: function(tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err,result){
@@ -10,6 +11,7 @@ var orm = {
             cb(result);
         });
     },
+    //creates an entry into the table
     create: function(table, column, value, cb) {
         var queryString = "INSERT INTO " + table;
 
@@ -28,6 +30,7 @@ var orm = {
             cb(result);
         });
     },
+    //updates an existing entry in the table
     update: function(table, col, val, condition, cb) {
         var queryString = "UPDATE " + table;
 
@@ -45,6 +48,7 @@ var orm = {
             cb(result);
         });
     },
+    //deletes an entry from the table
     delete: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table;
 

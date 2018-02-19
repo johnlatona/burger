@@ -1,3 +1,4 @@
+//client-side jquery and DOM manipulation
 $(document).ready(function() {
     $(".devour-button").on("click", function() {
         var id = $(this).data("id");
